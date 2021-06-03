@@ -9,9 +9,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
     margin-left: 10%;
     margin-right: 10%;
+    height: 10vh;
 }
     /* logo */
 .logo a{
@@ -45,13 +45,14 @@
 }
 
 .nav_list ul li a{
+    font-size: 17px;
     text-decoration: none;
     color: #000000;
 }
 
 /* nav_toggle */
 .nav_toggle{
-    margin-left: 15px;
+    /* margin-left: 15px; */
     display: none;
 }
 
@@ -71,9 +72,10 @@
 @media screen and (max-width: 500px) {
     .nav_toggle{
         display: unset;
+        z-index: 3;
     }
 
-/*     .nav_list{
+    /* .nav_list{
         margin-right: 10%;
         position: relative;
     } */
@@ -95,11 +97,11 @@
 
   .nav_list ul li a{
     font-size: 40px;
-    text-decoration: none;
     color: #000000;
 }
 
   .nav_menu{
-      align-items: unset;
+      align-items: center;
   }
 }
+
