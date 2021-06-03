@@ -73,17 +73,31 @@
         display: unset;
     }
 
-    .nav_list{
+/*     .nav_list{
         margin-right: 10%;
         position: relative;
-    }
+    } */
 
   .nav_responsive {
       display: flex;
       flex-direction: column;
+      left: 5%;
+      top: 10vh;
       position: absolute;
-      margin-top: 25px;
+      width: 90%;
+      height: 80vh;
+      border-radius: 20px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      background-color: grey;
   }
+
+  .nav_list ul li a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #000000;
+}
 
   .nav_menu{
       align-items: unset;
