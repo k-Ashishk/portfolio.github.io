@@ -11,8 +11,6 @@
     height: 100vh;
     max-width: 1440px;
     max-height: 900px;
-    display: flex;
-    flex-direction: column;
 }
     /* nav_bar */
 
@@ -25,7 +23,7 @@
     position: fixed;
     width: 100%;
     max-width: 1440px;
-    z-index: 4;
+    z-index: 2;
 }
     /* logo */
 
@@ -59,14 +57,15 @@
     display: flex;
 }
 
-.nav_list ul li{
-    margin-left: 10px;;
+.nav_list_ul li{
+    margin-left: 20px;
 }
 
-.nav_list ul li a{
+.nav_list_ul li a{
     font-size: 17px;
     text-decoration: none;
     color: #000000;
+    font-weight: 100;
 }
 
 /* nav_toggle */
@@ -91,7 +90,6 @@
 @media screen and (max-width: 600px) {
     .nav_toggle{
         display: unset;
-        z-index: 3;
     }
 
   .nav_responsive {
@@ -124,29 +122,29 @@
 
 
 .home_content{
-    display: flex;
     width: 100%;
-    height:100%;
+    height: 100%;
     padding-top: 50px;
-    align-items: center;
-    position: relative;
+    display: flex;
+    overflow-x: hidden;
 }
 
     /* text side  */
+.left_text{
+    flex: 1;
+    padding-left: 40px;
+    position: relative;
+}
+
 .text{
     position: absolute;
-    top: 240px;
-    flex: 1;
-    margin-left: 10%;
-    padding-left: 40px;
-    line-height: 50px;
-
-    
+    top: 200px;
+    left: 130px;
 }
 
 .text h3{
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .text h3::after{
@@ -169,35 +167,42 @@
     letter-spacing: 5px;
 }
     /* img side  */
-.side_img{  
+.right_img{  
     flex: 1;
-    margin-right: 10%;
-    position: absolute;
-    left: 55%;
-    top: 125px
 }
 
-.side_img_img img{
-    width: 600px;
+.side_img{
+    position: relative;
+}
+
+.side_img img{
+    position: absolute;
+    left: 0;
+    top: 120px;
+    width: 550px;
 }
 
 
 @media screen and (max-width: 600px) {
-    .side_img{
+    .right_img{
         display: none;
     }
 
-    .text{
-        width: 80%;
-        top: 40px;
-        top: 50%;
-        transform: translateY(-50%);
+    .left_text{
+        position: relative;
+        padding: 0;
+        /* align-items: center; */
     }
+
+    .text{
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
 }
 
 /* 2nd */
-/* .nd{
-    height: 500px;
-    width: 100%;
-    background-color: blue;
-} */
