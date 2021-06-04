@@ -132,12 +132,13 @@
 
     /* text side  */
 .text{
+    position: absolute;
+    top: 240px;
     width: 50%;
     margin-left: 10%;
     padding-left: 40px;
     line-height: 50px;
-    position: absolute;
-    top: 240px;
+
     
 }
 
