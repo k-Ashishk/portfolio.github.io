@@ -9,8 +9,13 @@
     margin: 0px auto;
     width: 100%;
     height: 100vh;
+    min-height: 600px;
     max-width: 1440px;
     max-height: 900px;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* background-color: blue; */
 }
     /* nav_bar */
 
@@ -24,6 +29,7 @@
     width: 100%;
     max-width: 1440px;
     z-index: 2;
+    transition: all 0.3s ease;
 }
     /* logo */
 
@@ -93,20 +99,21 @@
     }
 
   .nav_responsive {
-      position: absolute;
       display: flex;
       flex-direction: column;
+      top: 50px;
       left: 50%;
       transform: translateX(-50%);
-      top: 50px;
       position: fixed;
-      width: 85%;
+      width: 90%;
       height: 85vh;
+      min-height: 200px;
       border-radius: 20px;
       justify-content: center;
       align-items: center;
-      z-index: 2;
-      background-color: grey;
+      z-index: 9;
+      background-color: rgb(63, 63, 63);
+      overflow: hidden;
   }
 
   .nav_list ul li a{
@@ -123,10 +130,10 @@
 
 .home_content{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding-top: 50px;
     display: flex;
-    overflow-x: hidden;
+    /* background-color: green; */
 }
 
     /* text side  */
@@ -174,12 +181,16 @@
 
 .side_img{
     position: relative;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
 }
 
 .side_img img{
     position: absolute;
     left: 0;
-    top: 120px;
+    bottom: 40px;
     width: 550px;
 }
 
@@ -202,8 +213,15 @@
         transform: translateX(-50%);
     }
 
-
+    .main_content{
+        min-height: 450px;
+        min-width: 220px;
+    }
 
 }
 
 /* 2nd */
+.nd{
+
+    background-color: red;
+}
