@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="main_content">
+  <div class="main_content" id="home_page">
     <!-- Navbar-->
     <nav class="nav_menu">
 
@@ -22,10 +22,10 @@
       <!-- nav_menu -->
       <div class="nav_list">
         <ul class="nav_list_ul">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="nav_list_ul_li"><a href="#home_page">Home</a></li>
+          <li class="nav_list_ul_li"><a href="#portfolio_page">Portfolio</a></li>
+          <li class="nav_list_ul_li"><a href="#about_page">About</a></li>
+          <li class="nav_list_ul_li"><a href="#contact_page">Contact</a></li>
         </ul>
 
         <div class="nav_toggle">
@@ -43,6 +43,10 @@
           <h3>Hey</h3>
           <h1>I AM Ashish</h1>
           <p>Love the way of Learning</p>
+          <div class="btn">
+            <a href="#about_page">About</a>
+            <a href="#contact_page">Contact_</a>
+          </div>
         </div>
       </div>
       <!-- img_main -->
@@ -54,7 +58,62 @@
     </div>
   </div>
 
-  
+  <div class="portfolio_page" id="portfolio_page">
+    <div class="left_img">
+      <div class="side_img_p">
+        <img src="undraw_version_control_re_mg66.svg" alt="" srcset="">
+      </div>
+    </div>
+
+    <div class="right_text">
+      <div class="p_text">
+        <h1>let me introdoce my self</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus non ipsum voluptate perspiciatis earum magnam
+          officia excepturi recusandae quidem ipsam, nostrum dolore adipisci inventore perferendis veniam ipsa quasi
+          repellat quibusdam architecto. Sint repudiandae ratione minus est repellendus earum incidunt sequi animi
+          placeat perspiciatis fugit quibusdam maiores, suscipit doloremque soluta voluptatum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about_page" id="about_page">
+    <div class="say">
+      <h2>client say about me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nostrum velit asperiores accusamus ea
+          maxime?Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="scrol">
+
+    </div>
+  </div>
+
+  <div class="contact_page" id="contact_page">
+    <div class="email_con">
+      <h2>get update from anywhere</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatem alias cupiditate libero illo
+        atque.</p>
+
+      <div class="email">
+        <input type="text" placeholder="e-mail :">
+        <button>Subscribe</button>
+      </div>
+
+    </div>
+    <div class="social_link">
+      <h1>Ashish <span>_k</span></h1>
+      <h2>Follow Me</h2>
+      <div class="link">
+        <ul>
+          <li><a href="#contact_page" class="i">F</a></li>
+          <li><a href="#contact_page" class="i">I</a></li>
+          <li><a href="#contact_page" class="i">Y</a></li>
+          <li><a href="#contact_page" class="i">T</a></li>
+        </ul>
+      </div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, ratione.</p>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 
